@@ -33,12 +33,12 @@
 # 748593 = JSS15J
 # 750418 = JSS15K
 # end jb-mr2-dev
-BRANCH=klp-dev
-if test $BRANCH = klp-dev
+BRANCH=jb-mr2-dev
+if test $BRANCH = jb-mr2-dev
 then
-  ZIP=razorg-ota-937116
-  BUILD=kot49h
-fi # klp-dev
+  ZIP=razorg-ota-750418
+  BUILD=jss15k
+fi # jb-mr2-dev
 ROOTDEVICE=deb
 DEVICE=deb
 MANUFACTURER=asus
@@ -54,8 +54,8 @@ do
   asus)
     TO_EXTRACT="\
             system/etc/apns-conf.xml \
-            system/lib/libacdbdata.so \
             system/lib/libAKM.so \
+            system/lib/libacdbdata.so \
             "
     ;;
   broadcom)
@@ -76,6 +76,7 @@ do
             system/bin/hci_qcomm_init \
             system/bin/irsc_util \
             system/bin/ks \
+            system/bin/mm-pp-daemon \
             system/bin/mm-qcamera-app \
             system/bin/mm-qcamera-daemon \
             system/bin/mm-qjpeg-enc-test \
@@ -93,7 +94,7 @@ do
             system/bin/thermald \
             system/bin/usbhub \
             system/bin/usbhub_init \
-            system/etc/firmware/vidc_1080p.fw \
+            system/etc/DxHDCP.cfg \
             system/etc/firmware/vidc.b00 \
             system/etc/firmware/vidc.b01 \
             system/etc/firmware/vidc.b02 \
@@ -122,6 +123,7 @@ do
             system/lib/libchromatix_ov5693_default_video.so \
             system/lib/libchromatix_ov5693_preview.so \
             system/lib/libCommandSvc.so \
+
             system/lib/libconfigdb.so \
             system/lib/libcsd-client.so \
             system/lib/libdiag.so \
@@ -133,25 +135,29 @@ do
             system/lib/libdss.so \
             system/lib/libdsucsd.so \
             system/lib/libdsutils.so \
-            system/lib/libDxHdcp.so \
+            system/lib/libgeofence.so \
             system/lib/libgps.utils.so \
-            system/vendor/lib/libgsl.so \
-            system/lib/libI420colorconvert.so \
+            system/lib/libgsl.so \
             system/lib/libidl.so \
-            system/vendor/lib/libllvm-qcom.so \
-            system/lib/libloc_core.so \
+            system/lib/libllvm-a3xx.so \
+            system/lib/libloc_adapter.so \
+            system/lib/libloc_api_v02.so \
             system/lib/libloc_eng.so \
+            system/lib/libmm-abl-oem.so \
             system/lib/libmm-abl.so \
+            system/lib/libmm-color-convertor.so \
             system/lib/libmmcamera2_stats_algorithm.so \
             system/lib/libmmcamera_image_stab.so \
+            system/lib/libmmcamera_interface.so \
             system/lib/libmmcamera_mi1040.so \
             system/lib/libmmcamera_ov5693.so \
-            system/lib/libmm-color-convertor.so \
+            system/lib/libmmjpeg_interface.so \
             system/lib/libnetmgr.so \
             system/lib/liboemcrypto.so \
             system/lib/libqcci_legacy.so \
             system/lib/libqdi.so \
             system/lib/libqdp.so \
+            system/lib/libqmi.so \
             system/lib/libqmi_cci.so \
             system/lib/libqmi_client_qmux.so \
             system/lib/libqmi_common_so.so \
@@ -159,14 +165,10 @@ do
             system/lib/libqmi_csvt_srvc.so \
             system/lib/libqmi_encdec.so \
             system/lib/libqmiservices.so \
-            system/lib/libqmi.so \
-            system/lib/libQSEEComAPI.so \
+            system/lib/libqomx_core.so \
             system/lib/libril-qc-qmi-1.so \
             system/lib/libril-qcril-hook-oem.so \
-            system/vendor/lib/librs_adreno_sha1.so \
-            system/vendor/lib/librs_adreno.so \
-            system/vendor/lib/libRSDriver_adreno.so \
-            system/vendor/lib/libsc-a3xx.so \
+            system/lib/libsc-a3xx.so \
             system/lib/libsensor1.so \
             system/lib/libsensor_reg.so \
             system/lib/libsensor_user_cal.so \
@@ -199,11 +201,6 @@ do
             system/vendor/firmware/gss.b10 \
             system/vendor/firmware/gss.b11 \
             system/vendor/firmware/gss.mdt \
-            system/vendor/firmware/keymaster/keymaster.b00 \
-            system/vendor/firmware/keymaster/keymaster.b01 \
-            system/vendor/firmware/keymaster/keymaster.b02 \
-            system/vendor/firmware/keymaster/keymaster.b03 \
-            system/vendor/firmware/keymaster/keymaster.mdt \
             system/vendor/firmware/q6.b00 \
             system/vendor/firmware/q6.b01 \
             system/vendor/firmware/q6.b03 \
@@ -224,12 +221,8 @@ do
             system/vendor/firmware/wcnss.mdt \
             system/vendor/lib/libdrmdecrypt.so \
             system/vendor/lib/libgemini.so \
-            system/vendor/lib/libgeofence.so \
             system/vendor/lib/libimage-jpeg-enc-omx-comp.so \
             system/vendor/lib/libimage-omx-common.so \
-            system/vendor/lib/libizat_core.so \
-            system/vendor/lib/libloc_api_v02.so \
-            system/vendor/lib/libloc_ds_api.so \
             system/vendor/lib/libmmcamera2_c2d_module.so \
             system/vendor/lib/libmmcamera2_cpp_module.so \
             system/vendor/lib/libmmcamera2_iface_modules.so \

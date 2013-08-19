@@ -26,11 +26,11 @@
 # end jb-mr2-dev
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=937116
+BUILD=750418
 DEVICE=deb
 PRODUCT=razorg
-VERSION=kot49h
+VERSION=jss15k
 SRCPREFIX=signed-
-BOOTLOADER=flo-04.02
-RADIO=deb-g00_2.37.0_1024
+BOOTLOADER=flo-03.14
+RADIO=deb-g00_1.23.0_0720
 source ../../../common/generate-factory-images-common.sh
