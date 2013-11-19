@@ -180,6 +180,9 @@ on post-fs-data
     mkdir /persist/sensors
     chmod 775 /persist/sensors
 
+    # Label in case file already exists
+    restorecon /data/fdAlbum
+
     # Modify from 777 (for camera calibration) to 775
     chmod 775 /persist/camera_calibration
 
@@ -311,7 +314,6 @@ service qmuxd /system/bin/qmuxd
 
 service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
     class core
-    group system
     seclabel u:r:kickstart:s0
     oneshot
 
@@ -433,8 +435,13 @@ service thermald /system/bin/thermald
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     class main
-    user root
-    group root system
+
+service ppd /system/bin/mm-pp-daemon
+    class late_start
+    disabled
+    user system
+    socket pps stream 0660 system system
+    group system graphics
 
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
