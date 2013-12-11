@@ -36,9 +36,10 @@
 BRANCH=jb-mr2-dev
 if test $BRANCH = jb-mr2-dev
 then
-  ZIP=razorg-ota-750418
-  BUILD=jss15k
-fi # jb-mr2-dev
+  ZIP=razorg-ota-937116
+  BUILD=kot49h
+fi # klp-dev
+>>>>>>> Update for KOT49H
 ROOTDEVICE=deb
 DEVICE=deb
 MANUFACTURER=asus
@@ -123,7 +124,6 @@ do
             system/lib/libchromatix_ov5693_default_video.so \
             system/lib/libchromatix_ov5693_preview.so \
             system/lib/libCommandSvc.so \
-
             system/lib/libconfigdb.so \
             system/lib/libcsd-client.so \
             system/lib/libdiag.so \
