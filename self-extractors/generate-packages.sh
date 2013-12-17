@@ -39,7 +39,6 @@ then
   ZIP=razorg-ota-937116
   BUILD=kot49h
 fi # klp-dev
->>>>>>> Update for KOT49H
 ROOTDEVICE=deb
 DEVICE=deb
 MANUFACTURER=asus
