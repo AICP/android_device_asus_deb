@@ -138,9 +138,8 @@ do
             system/lib/libgps.utils.so \
             system/lib/libgsl.so \
             system/lib/libidl.so \
-            system/lib/libllvm-a3xx.so \
-            system/lib/libloc_adapter.so \
-            system/lib/libloc_api_v02.so \
+            system/lib/libllvm-qcom.so \
+            system/lib/libloc_core.so \
             system/lib/libloc_eng.so \
             system/lib/libmm-abl-oem.so \
             system/lib/libmm-abl.so \
