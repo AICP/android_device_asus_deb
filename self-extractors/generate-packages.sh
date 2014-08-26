@@ -102,12 +102,12 @@ do
             system/etc/firmware/vidcfw.elf \
             system/etc/firmware/vidc.mdt \
             system/etc/gps.conf \
-            system/lib/egl/eglsubAndroid.so \
-            system/lib/egl/libEGL_adreno.so \
-            system/lib/egl/libGLESv1_CM_adreno.so \
-            system/lib/egl/libGLESv2_adreno.so \
-            system/lib/egl/libplayback_adreno.so \
-            system/lib/egl/libq3dtools_adreno.so \
+            system/vendor/lib/egl/eglsubAndroid.so \
+            system/vendor/lib/egl/libEGL_adreno.so \
+            system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+            system/vendor/lib/egl/libGLESv2_adreno.so \
+            system/vendor/lib/egl/libplayback_adreno.so \
+            system/vendor/lib/egl/libq3dtools_adreno.so \
             system/lib/hw/flp.msm8960.so \
             system/lib/hw/gps.msm8960.so \
             system/lib/hw/sensors.msm8960.so \
@@ -136,9 +136,10 @@ do
             system/lib/libdsutils.so \
             system/lib/libgeofence.so \
             system/lib/libgps.utils.so \
-            system/lib/libgsl.so \
+            system/vendor/lib/libgsl.so \
+            system/lib/libI420colorconvert.so \
             system/lib/libidl.so \
-            system/lib/libllvm-qcom.so \
+            system/vendor/lib/libllvm-qcom.so \
             system/lib/libloc_core.so \
             system/lib/libloc_eng.so \
             system/lib/libmm-abl-oem.so \
@@ -166,7 +167,10 @@ do
             system/lib/libqomx_core.so \
             system/lib/libril-qc-qmi-1.so \
             system/lib/libril-qcril-hook-oem.so \
-            system/lib/libsc-a3xx.so \
+            system/vendor/lib/librs_adreno_sha1.so \
+            system/vendor/lib/librs_adreno.so \
+            system/vendor/lib/libRSDriver_adreno.so \
+            system/vendor/lib/libsc-a3xx.so \
             system/lib/libsensor1.so \
             system/lib/libsensor_reg.so \
             system/lib/libsensor_user_cal.so \
