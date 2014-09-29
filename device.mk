@@ -21,14 +21,43 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_COPY_FILES := \
     device/asus/deb/fstab.deb:root/fstab.flo \
-    device/asus/deb/init.deb.rc:root/init.flo.rc
+    device/asus/deb/init.deb.rc:root/init.flo.rc \
+    device/asus/deb/fstab/fstab.deb.all-EXT4:system/extras/fstab/fstab.deb.all-EXT4 \
+    device/asus/deb/fstab/fstab.deb.all-F2FS:system/extras/fstab/fstab.deb.all-F2FS \
+    device/asus/deb/fstab/fstab.deb.data-F2FS:system/extras/fstab/fstab.deb.data-F2FS \
+    device/asus/deb/tools/repack-and-flash.sh:system/extras/tools/repack-and-flash.sh \
+    device/asus/deb/tools/format-system.sh:system/extras/tools/format-system.sh \
+    device/asus/deb/tools/kernel/repackimg.sh:system/extras/tools/kernel/repackimg.sh \
+    device/asus/deb/tools/kernel/unpackimg.sh:system/extras/tools/kernel/unpackimg.sh \
+    device/asus/deb/tools/kernel/cleanup.sh:system/extras//tools/kernel/cleanup.sh \
+    device/asus/deb/tools/kernel/authors.txt:system/extras/tools/kernel/authors.txt \
+    device/asus/deb/tools/kernel/bin/aik:system/extras/tools/kernel/bin/aik \
+    device/asus/deb/tools/kernel/bin/busybox:system/extras/tools/kernel/bin/busybox \
+    device/asus/deb/tools/kernel/bin/file:system/extras/tools/kernel/bin/file \
+    device/asus/deb/tools/kernel/bin/lz4:system/extras/tools/kernel/bin/lz4 \
+    device/asus/deb/tools/kernel/bin/magic:system/extras/tools/kernel/bin/magic \
+    device/asus/deb/tools/kernel/bin/mkbootfs:system/extras/tools/kernel/bin/mkbootfs \
+    device/asus/deb/tools/kernel/bin/mkbootimg:system/extras/tools/kernel/bin/mkbootimg \
+    device/asus/deb/tools/kernel/bin/unpackbootimg:system/extras/tools/kernel/bin/unpackbootimg \
+    device/asus/deb/tools/kernel/bin/xz:system/extras/tools/kernel/bin/xz
 
 PRODUCT_PACKAGES += \
-	camera.deb
+    camera.deb
 
 #NFC
 PRODUCT_PACKAGES += \
     nfc_nci.deb
+
+# F2FS
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    setup_fs \
+    e2fsck
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
