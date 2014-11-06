@@ -2,7 +2,7 @@
   {
     "repository": "AICP/device_asus_flo",
     "target_path": "device/asus/flo",
-    "branch":      "kitkat"
+    "branch":      "lp5.0"
   },
   {
     "repository": "AICP/kernel_asus_flo",
