@@ -7,16 +7,16 @@
   {
    "repository":  "AICP/proprietary_vendor_asus",
    "target_path": "vendor/asus",
-   "branch":      "kitkat"
+   "branch":      "lp5.0"
   },
   {
    "repository":  "AICP/proprietary_vendor_broadcom",
    "target_path": "vendor/broadcom",
-   "branch":      "kitkat"
+   "branch":      "lp5.0"
   },
   {
    "repository":  "AICP/proprietary_vendor_qcom",
    "target_path": "vendor/qcom",
-   "branch":      "kitkat"
+   "branch":      "lp5.0"
   }
 ]
