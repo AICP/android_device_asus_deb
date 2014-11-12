@@ -5,6 +5,11 @@
     "branch":      "lp5.0"
   },
   {
+   "repository":  "AICP/kernel_asus_flo",
+   "target_path": "kernel/asus/flo",
+   "branch":      "lp5.0"
+  },
+  {
    "repository":  "AICP/proprietary_vendor_asus",
    "target_path": "vendor/asus",
    "branch":      "lp5.0"
