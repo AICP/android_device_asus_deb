@@ -299,4 +299,7 @@
          performance profiles  -->
     <string name="config_perf_profile_default_entry" translatable="false">1</string>
 
+    <!-- Wake gestures -->
+    <bool name="config_wake_gestures_available">true</bool>
+
 </resources>
