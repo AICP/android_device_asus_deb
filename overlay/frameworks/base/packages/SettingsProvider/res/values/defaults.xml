@@ -17,6 +17,8 @@
  */
 -->
 <resources>
+    <!-- Turn on Wifi On Boot -->
+    <bool name="def_wifi_on">true</bool>
     <!-- 30 seconds for default screen timeout -->
     <integer name="def_screen_off_timeout">30000</integer>
     <!-- Set the automatic brightness mode on by default -->
