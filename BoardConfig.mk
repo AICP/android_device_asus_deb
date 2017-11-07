@@ -18,6 +18,8 @@ TARGET_BOOTLOADER_BOARD_NAME := deb
 TARGET_BOOTLOADER_NAME := deb
 TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
+DEVICE_MANIFEST_FILE := device/asus/deb/manifest.xml
+
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.deb
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/deb
