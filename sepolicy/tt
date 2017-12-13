@@ -1,0 +1,8 @@
+11-29 22:19:54.122   279   279 I android.hardwar: type=1400 audit(0.0:464): avc: denied { read } for name="online" dev="sysfs" ino=34 scontext=u:r:mediacodec:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+11-29 22:19:54.122   279   279 I android.hardwar: type=1400 audit(0.0:465): avc: denied { open } for name="online" dev="sysfs" ino=34 scontext=u:r:mediacodec:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+11-29 22:19:54.122   279   279 I android.hardwar: type=1400 audit(0.0:466): avc: denied { getattr } for path="/sys/devices/system/cpu/online" dev="sysfs" ino=34 scontext=u:r:mediacodec:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+11-29 22:52:58.255  6884  6884 I shikdutta.vysor: type=1400 audit(0.0:423): avc: denied { read } for name="cpu" dev="sysfs" ino=32 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+11-29 22:52:58.255  6884  6884 I shikdutta.vysor: type=1400 audit(0.0:424): avc: denied { open } for name="cpu" dev="sysfs" ino=32 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+11-29 22:52:58.335  6884  6884 I shikdutta.vysor: type=1400 audit(0.0:425): avc: denied { read } for name="present" dev="sysfs" ino=36 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+
+
