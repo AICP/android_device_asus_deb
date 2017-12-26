@@ -2,7 +2,10 @@
 PRODUCT_RELEASE_NAME := deb
 
 # Inherit some AICP  stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_mini_tablet_wifionly.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/config/telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
