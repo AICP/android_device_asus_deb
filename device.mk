@@ -34,10 +34,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.0-impl \
     android.hardware.radio.deprecated@1.0-impl
 
-#NFC
-PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.default
-
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.radio.apm_sim_not_pwdn=1
