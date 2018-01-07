@@ -1,3 +1,0 @@
-#============= nfc ==============
-allow nfc sysfs:dir open;
-allow nfc sysfs:dir read;

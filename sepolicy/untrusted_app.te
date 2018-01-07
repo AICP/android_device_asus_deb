@@ -1,4 +1,0 @@
-#============= untrusted_app ==============
-allow untrusted_app sysfs:dir { open read };
-allow untrusted_app sysfs:file read;
-
