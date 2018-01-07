@@ -123,8 +123,8 @@ on boot
     chown system system /sys/kernel/cpufreq_limit/limited_min_freq
 
 # NFC: create data/nfc for nv storage
-    mkdir /data/nfc 770 nfc nfc
-    mkdir /data/nfc/param 770 nfc nfc
+#    mkdir /data/nfc 770 nfc nfc
+#    mkdir /data/nfc/param 770 nfc nfc
 
 # Assign TCP buffer thresholds to be ceiling value of technology maximums
 # Increased technology maximums should be reflected here.
