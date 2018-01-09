@@ -1,8 +1,8 @@
 [
   {
-    "repository": "LineageOS/android_device_asus_flo",
+    "repository": "AICP/device_asus_flo",
     "target_path": "device/asus/flo",
-    "branch":      "lineage-15.1"
+    "branch":      "o8.1"
   },
   {
    "repository":  "LineageOS/android_kernel_google_msm",
