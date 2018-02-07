@@ -1,0 +1,23 @@
+# We cant wait for all the patches be merged
+# so we pull the patches from gerrit.
+
+59791 http://gerrit.aicp-rom.com kernel/google/msm/
+59794 http://gerrit.aicp-rom.com kernel/google/msm/
+59797 http://gerrit.aicp-rom.com kernel/google/msm/
+59800 http://gerrit.aicp-rom.com kernel/google/msm/
+59803 http://gerrit.aicp-rom.com kernel/google/msm/
+59806 http://gerrit.aicp-rom.com kernel/google/msm/
+59809 http://gerrit.aicp-rom.com kernel/google/msm/
+59812 http://gerrit.aicp-rom.com kernel/google/msm/
+59815 http://gerrit.aicp-rom.com kernel/google/msm/
+59818 http://gerrit.aicp-rom.com kernel/google/msm/
+59821 http://gerrit.aicp-rom.com kernel/google/msm/
+59827 http://gerrit.aicp-rom.com kernel/google/msm/
+59830 http://gerrit.aicp-rom.com kernel/google/msm/
+59833 http://gerrit.aicp-rom.com kernel/google/msm/
+59836 http://gerrit.aicp-rom.com kernel/google/msm/
+59839 http://gerrit.aicp-rom.com kernel/google/msm/
+59842 http://gerrit.aicp-rom.com kernel/google/msm/
+59845 http://gerrit.aicp-rom.com kernel/google/msm/
+59848 http://gerrit.aicp-rom.com kernel/google/msm/
+59851 http://gerrit.aicp-rom.com kernel/google/msm/
