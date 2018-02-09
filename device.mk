@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
+# GPS configuration
+PRODUCT_COPY_FILES += \
+    device/asus/deb/gps.conf:system/etc/gps.conf
+
 PRODUCT_PACKAGES += \
 	camera.msm8960
 
